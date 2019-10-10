@@ -1,0 +1,2 @@
+
+stringa = 'ciambellina'

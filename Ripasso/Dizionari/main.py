@@ -1,0 +1,5 @@
+
+# popolare un dizionario
+
+spesa = {}
+
