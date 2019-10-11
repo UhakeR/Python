@@ -67,14 +67,14 @@ def main():
 #team 02 is the winner
         else:
             print(team02.capitalize(), "is the winner")
-        if team02 in ranking:  # check if key exists: se esiste già team02
-            ranking[team02] = ranking[team02] + winnerScore  # vittoria
-        else:
-            ranking[team02] = winnerScore  # nuovo team02 sconfitto
-        if team01 in ranking:  # check if key exists: se esiste già team01
-            ranking[team01] = ranking[team01] + loserScore  # sconfitta
-        else:
-            ranking[team01] = loserScore  # nuovo team01
+            if team02 in ranking:  # check if key exists: se esiste già team02
+                ranking[team02] = ranking[team02] + winnerScore  # vittoria
+            else:
+                ranking[team02] = winnerScore  # nuovo team02 sconfitto
+            if team01 in ranking:  # check if key exists: se esiste già team01
+                ranking[team01] = ranking[team01] + loserScore  # sconfitta
+            else:
+                ranking[team01] = loserScore  # nuovo team01
 
         print(ranking)  # debug
 
