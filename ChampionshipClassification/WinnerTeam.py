@@ -18,14 +18,14 @@ while True:
         try:
             point1 = int(input('Team 1 points: '))
         except Exception:
-            print('Retray')
+            print('Retry') # modificato parola "Retray" (GG)
 
     point2 = -1
     while point2 < 0:
         try:
             point2 = int(input('Team 2 points: '))
         except Exception:
-            print('Retray')
+            print('Retry') # modificato parola "Retray" (GG)
     pros = input('vuoi continuare? ')
 
     if pros=='q':
