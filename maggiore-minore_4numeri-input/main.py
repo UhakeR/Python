@@ -1,13 +1,16 @@
 # Federica, esame 14/10/19
 
     # ho sostituito a "int" il float, ed introdotto un controllo di valori numerici col try-except
-while True:
-try:
-    a = float (input('Enter your first number : '))
-except ValueError:  # controllo che l'input sia solo numerico
-    print("Sono ammessi solo interi o decimali")
-if a<=0:
-    break
+i=0
+while i<4:
+    try:
+        a = float (input('Enter your first number : '))
+    except ValueError:  # controllo che l'input sia solo numerico
+        print("Sono ammessi solo interi o decimali")
+    if a<=0:
+        break
+    i+=1
+'''
 try:
     b = float (input ('Enter your second number : '))
 except ValueError:  # controllo che l'input sia solo numerico
@@ -43,3 +46,4 @@ elif c < d:
   print(min, c)
 else:
   print(min, d)
+'''
