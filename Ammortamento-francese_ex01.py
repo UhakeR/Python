@@ -13,6 +13,7 @@ capital = int(input("Type the amount of euros you want to invest: ")) # inserisc
 interestRate = float(input("Type the interest rate % that 'Money for All' will return yearly: ")) # inserisci la percentuale di interesse
 yearsDuration = int(input ("Type the duration of the investment: ")) # inserisci il numero di anni dell’investimento
 
+print("N \t I \t\t\t  M \n ------------------------")
 for d in range(1, yearsDuration +1): # calcola anno per anno gli interessi ed il capitale
     extraMoneyReturned = capital * interestRate / 100 # aggiungo gli interessi ogni anno: interessi = capitale * tasso / 100
         # print("The extra-money returned after", yearsDuration, "year will be: ", extraMoneyReturned )
