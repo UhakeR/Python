@@ -2,25 +2,31 @@
 
     # ho sostituito a "int" il float, ed introdotto un controllo di valori numerici col try-except
 while True:
-try:
-    a = float (input('Enter your first number : '))
-except ValueError:  # controllo che l'input sia solo numerico
-    print("Sono ammessi solo interi o decimali")
-if a<=0:
+    try:
+        a = float (input('Enter your first number : '))
+    except ValueError:  # controllo che l'input sia solo numerico
+        print("Sono ammessi solo interi o decimali")
+        if a<=0:
+            break
+    try:
+        b = float (input ('Enter your second number : '))
+    except ValueError:  # controllo che l'input sia solo numerico
+        print("Sono ammessi solo interi o decimali")
+        if b<=0:
+            break
+    try:
+        c = float (input ('Enter your third number : '))
+    except ValueError:  # controllo che l'input sia solo numerico
+        print("Sono ammessi solo interi o decimali")
+        if c<=0:
+            break
+    try:
+        d = float (input('Enter your last number : '))
+    except ValueError:  # controllo che l'input sia solo numerico
+        print("Sono ammessi solo interi o decimali")
+        if d<=0:
+            break
     break
-try:
-    b = float (input ('Enter your second number : '))
-except ValueError:  # controllo che l'input sia solo numerico
-    print("Sono ammessi solo interi o decimali")
-try:
-    c = float (input ('Enter your third number : '))
-except ValueError:  # controllo che l'input sia solo numerico
-    print("Sono ammessi solo interi o decimali")
-try:
-    d = float (input('Enter your last number : '))
-except ValueError:  # controllo che l'input sia solo numerico
-    print("Sono ammessi solo interi o decimali")
-
 max = str("Your major number is : ")
 if a > b:
   if a > c:
