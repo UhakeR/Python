@@ -10,6 +10,7 @@ def main():
         try:
             x = float(input('Inserisci voto (-1 per terminare): '))
         except ValueError:  # controllo che l'input sia solo numerico (by GG)
+            print("E' possibile inserire solo numeri")
             break
 
         if x == -1:  # esco da qua
