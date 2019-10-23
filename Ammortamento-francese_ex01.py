@@ -7,7 +7,6 @@ la percentuale di interesse e il numero di anni dell’investimento.
 Il calcolo degli interessi si effettua tramite la seguente formula:
 interessi = capitale * tasso / 100
 e questi verranno sommati di anno in anno al capitale."""
-import decimal
 
 capital = int(input("Type the amount of euros you want to invest: ")) # inserisci il capitale iniziale in euro
 interestRate = float(input("Type the interest rate % that 'Money for All' will return yearly: ")) # inserisci la percentuale di interesse
