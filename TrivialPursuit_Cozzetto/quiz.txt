@@ -1,0 +1,6 @@
+'Domanda','risposta1','risposta2','risposta3','risposta4','risposta5','rispostacorretta'
+Chi ha progettato Java?,Maurizio Cozzetto,James Gosling,Bill Gates,Steve Jobs,Federico Faggin,B
+Chi ha inventato Windows?,Bill Gates,Steve Jobs,Alan Turing,Federico Faggin,A
+Chi ha inventato Python?,Pablo Picasso,Manet,Guido von Rossum,C
+Chi è il più rompiscatole della 5DI?,Elamin,Alladin,Acheampong,Asare,Singh1,Singh2,A
+Chi è il più bello della 5DI?,Elamin,Alladin,Acheampong,Asare,Singh1,Singh2,C
