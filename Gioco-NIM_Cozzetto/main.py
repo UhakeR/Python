@@ -1,5 +1,5 @@
 import random
-import utility
+import utility_getInt
 
 class Nim:
 	def __init__(self, s, p):
@@ -25,11 +25,11 @@ class Nim:
 	def move(self, p):
 		print('Giocatore', self.__players[p])
 
-		s = utility.getInt('Pila: ', 0, len(self.__stacks) - 1)
+		s = utility_getInt.getInt('Pila: ', 0, len(self.__stacks) - 1)
 		while self.__stacks[s] == 0:
-			s = utility.getInt('Pila: ', 0, len(self.__stacks) - 1)
+			s = utility_getInt.getInt('Pila: ', 0, len(self.__stacks) - 1)
 
-		t = utility.getInt('Elementi da togliere: ', 1, self.__stacks[s])
+		t = utility_getInt.getInt('Elementi da togliere: ', 1, self.__stacks[s])
 		self.__stacks[s] = self.__stacks[s] - t
 
 	# dice qual è la condizione di uscita
@@ -43,7 +43,7 @@ class Nim:
 		b = True
 		while b:
 			#print(self.__stacks)
-			utility.stampaAsterischi(self.__stacks)
+			utility_getInt.stampaAsterischi(self.__stacks)
 			m = l % len(self.__players) #serve per alternare i vari giocatori
 			'''
 			# codice da usare eventualmente per giocare contro la macchina
@@ -59,7 +59,7 @@ class Nim:
 			l = l + 1
 
 			# lascia stare
-			s = utility.sommaXOR(self.__stacks)
+			s = utility_getInt.sommaXOR(self.__stacks)
 			#print('Somma XOR =', s)
 
 			# se la condizione di uscita si verifica, ti dico chi ha vinto

@@ -1,17 +1,16 @@
 # gestione manuale della media
+import utility
+
 
 def main():
     v = []  # array dove mettere i voti
+
     s = 0.0  # devo sommare i voti in s
     c = 0  # conto i voti
 
     # ciclo di lettura dei voti
     while True:
-        try:
-            x = float(input('Inserisci voto (-1 per terminare): '))
-        except ValueError:  # controllo che l'input sia solo numerico (by GG)
-            print("E' possibile inserire solo numeri")
-            break
+        x = utility.getFloat('Inserisci un voto da 0 a 10 (-1 per terminare): ', -1, 10)
 
         if x == -1:  # esco da qua
             break
@@ -20,6 +19,7 @@ def main():
 
         s = s + x
         c = c + 1
+        print('c =', c)
 
     try:
         print('Minimo = ', min(v))
@@ -33,9 +33,10 @@ def main():
         c = c - 1
 
         # stampo v senza il minimo
-        print('v =', v, 'c =', c)
+        print('v =', v, 'c =', c, 's =', s)
 
         # tolgo il minimo e poi decremento di uno c
+
         media = s / c
 
         print('media = ', media)
